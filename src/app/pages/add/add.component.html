@@ -1,0 +1,37 @@
+<div>
+    <form [formGroup]="addForm" (ngSubmit)="handleSubmit()">
+        <div class="mb-3">
+            <label class="form-label">Title</label>
+            <input type="text" class="form-control" formControlName="title" />
+            @if(addForm.controls['title'].errors?.['required'] && addForm.controls['title'].touched){
+            <small class="text-danger">Title la bat buoc</small>
+            }
+
+
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Price</label>
+            <input type="number" class="form-control" formControlName="price" />
+            @if(addForm.controls['price'].errors?.['required'] && addForm.controls['price'].touched){
+            <small class="text-danger">price la bat buoc</small>
+            }
+            @if(addForm.controls['price'].errors?.['min'] && addForm.controls['price'].touched){
+            <small class="text-danger">price phai lon hon 0</small>
+            }
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Description</label>
+            <input type="text" class="form-control" formControlName="desc" />
+            @if(addForm.controls['desc'].errors?.['required'] && addForm.controls['desc'].touched){
+            <small class="text-danger">desc la bat buoc</small>
+            }
+        </div>
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" formControlName="active" [value]="true">
+            <label class="form-check-label">
+                Active ?
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="addForm.invalid">Add Product</button>
+    </form>
+</div>

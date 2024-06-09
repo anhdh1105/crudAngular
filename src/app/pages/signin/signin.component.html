@@ -1,0 +1,26 @@
+<div>
+    <form [formGroup]="addForm" (ngSubmit)="handleSubmit()">
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" formControlName="email" />
+            @if(addForm.controls['email'].errors?.['required'] && addForm.controls['email'].touched){
+            <small class="text-danger">email la bat buoc</small>
+            }
+            @if(addForm.controls['email'].errors?.['email'] && addForm.controls['email'].touched){
+            <small class="text-danger">Email chua dung dinh dang</small>
+            }
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="text" class="form-control" formControlName="password" />
+            @if(addForm.controls['password'].errors?.['required'] && addForm.controls['password'].touched){
+            <small class="text-danger">password la bat buoc</small>
+            }
+            <small *ngIf="addForm.controls['password'].errors?.['minlength'] && addForm.controls['password'].touched"
+                class="text-danger text-small"> Password min 6 ky tu</small>
+        </div>
+
+
+        <button type="submit" class="btn btn-primary">Signin</button>
+    </form>
+</div>

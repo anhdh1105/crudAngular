@@ -1,0 +1,55 @@
+{
+  "products": [
+    {
+      "title": "Em Hank 21312321",
+      "price": 3333,
+      "desc": "Okkk",
+      "active": false,
+      "id": 2
+    },
+    {
+      "title": "Em Hank 9999",
+      "price": 4444,
+      "desc": "okkk",
+      "active": true,
+      "id": 4
+    },
+    {
+      "title": "1111",
+      "price": 11111,
+      "desc": "dghgfgfh",
+      "active": false,
+      "id": 5
+    }
+  ],
+  "users": [
+    {
+      "email": "hanh@gmail.com",
+      "password": "$2a$10$CR9.zB1bnhqyHpPEiAFb7exT60yNdEx/OkZKXUmePyG/6dO6CF3Tu",
+      "username": "Em hank",
+      "repass": "1234567",
+      "id": 1
+    },
+    {
+      "email": "aaa@gmail.com",
+      "password": "$2a$10$scI.tbHH3y6VFyFnp6UJXOs7OIqLTJSrdL/gPcoT5B3PFQ8/4o3Ey",
+      "username": "asdsa",
+      "repass": "2131232131",
+      "id": 2
+    },
+    {
+      "email": "em1@gmail.com",
+      "password": "$2a$10$k2td7xJUCL0ZUm9GWVBO4uIMFYnjNI/z1ZCtlezpIuNbL5hna3mnW",
+      "username": "adgdsgsd",
+      "repass": "12345567",
+      "id": 3
+    },
+    {
+      "email": "member@gmail.com",
+      "password": "$2a$10$ydRnyqdOSOwsjgXA367mYuhYcW.U273ulM4xUv27E4YwfDBULAr1.",
+      "username": "aaaaa",
+      "repass": "123456",
+      "id": 4
+    }
+  ]
+}
